@@ -1,8 +1,10 @@
 package com.example.carKeeper;
-
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Car {
 
     private @Id @GeneratedValue Long id;
@@ -42,6 +44,30 @@ public class Car {
 
     public String getColor(){
         return this.color;
+    }
+
+    public void setId(Long id){
+        this.id = id;
+    }
+
+    public void setVin(String vin){
+        this.vin = vin;
+    }
+
+    public void setMake(String make){
+        this.make = make;
+    }
+
+    public void setModel(String model){
+        this.model = model;
+    }
+
+    public void setYear(String year){
+        this.year = year;
+    }
+
+    public void setColor(String color){
+        this.color = color;
     }
 
     @Override
