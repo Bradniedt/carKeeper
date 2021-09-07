@@ -14,6 +14,9 @@ public class Car {
     private String year;
     private String color;
 
+    public Car(){
+    }
+
     Car(String vinStr, String makeStr, String modelStr, String yearStr, String colorStr){
         this.vin = vinStr;
         this.make = makeStr;
